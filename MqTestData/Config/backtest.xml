@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <InitStockCash>0</InitStockCash>
+  <BuyFeeStock>0.1</BuyFeeStock>
+  <SellFeeStock>0.1</SellFeeStock>
+  <InitFutureCash>100</InitFutureCash>
+  <FeeFuture>0.1</FeeFuture>
+  <MarginRateLong>1</MarginRateLong>
+  <MarginRateShort>1</MarginRateShort>
+  <AutoChangeMain>True</AutoChangeMain>
+</root>

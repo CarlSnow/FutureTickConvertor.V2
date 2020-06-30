@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<channels>
+  <channel id="CTP" name="CTP">
+    <param name="addressfile">config\ctpbrokers.xml</param>
+    <param name="timeout">120</param>
+    <param name="udp">false</param>
+  </channel>
+  <channel id="LTS2015" name="LTS2015">
+    <param name="addressfile">config\ltsbrokers.xml</param>
+    <param name="userproductinfo">LTS-Test</param>
+    <param name="authcode">N3EHKP4CYHZGM9VJ</param>
+  </channel>
+  <channel id="KMAPStock" name="金证微框架股票">
+    <param name="address">10.7.86.4</param>
+    <param name="port">41000</param>
+    <param name="valueflag">15</param>
+    <param name="szAcctType">Z</param>
+    <param name="chUseScope">0</param>
+    <param name="chAuthType">0</param>
+    <param name="szEncryptKey">12345</param>
+    <param name="llCustCode">101295077</param>
+    <param name="chChannel">8</param>
+  </channel>
+  <channel id="KMAPStockOption" name="金证微框架股票期权">
+    <param name="server">10.7.86.36</param>
+    <param name="port">41000</param>
+    <param name="valueflag">15</param>
+    <param name="szAcctType">Z</param>
+    <param name="chUseScope">4</param>
+    <param name="chAuthType">0</param>
+    <param name="szEncryptKey">12345</param>
+    <param name="chEncryptType">2</param>
+    <param name="siIntOrg">8803</param>
+    <param name="chChannel">8</param>
+  </channel>
+  <channel id="XunTou" name="迅投">
+    <param name="address">120.136.170.34</param>
+    <param name="port">56001</param>
+  </channel>
+  <channel id="MQDataFeed" name="MQDataFeed" />
+  <channel id="Femas" name="Femas">
+    <param name="addressfile">config\femas.xml</param>
+    <param name="timeout">120</param>
+    <param name="udp">false</param>
+    <param name="topic">100</param>
+  </channel>
+  <channel id="UFX" name="UFX">
+    <param name="filePath">config/ufx.xml</param>
+  </channel>
+  <channel id="DBFLocal" name="DBFLocal">
+    <param name="SHDir">C:\Users\GXP\Desktop\通道\DBLocal文本\Test</param>
+    <param name="SZDir">C:\Users\GXP\Desktop\通道\DBLocal文本\Test</param>
+    <param name="interval">60</param>
+    <param name="isscan">false</param>
+    <param name="SHFile">mktdt00.txt</param>
+    <param name="IfSH">true</param>
+    <param name="SHMode">1</param>
+    <param name="SZFile">SJSHQ.DBF</param>
+    <param name="IfSZ">false</param>
+    <param name="SHOptDir">C:\Users\GXP\Desktop\通道\DBLocal文本\Test</param>
+    <param name="SHOptFile">mktdt73.txt</param>
+    <param name="IfSHOpt">false</param>
+    <param name="SocketIp">192.168.180.11</param>
+    <param name="SocketPort">8016</param>
+    <param name="SocketHeartTime">10</param>
+    <param name="IsSocket">true</param>
+    <param name="BinaryVersion">1.00</param>
+    <param name="HeartTimeout">180</param>
+    <param name="V5Dir">C:\Users\GXP\Desktop\V5</param>
+  </channel>
+  <channel id="Kingdom" name="金证">
+    <param name="address">10.10.61.101</param>
+    <param name="port">21000</param>
+    <param name="timeout">60000</param>
+    <param name="receivename">ans_gt</param>
+    <param name="sendname">req_gt</param>
+    <param name="user">KCXP00</param>
+    <param name="pwd">888888</param>
+  </channel>
+  <channel id="HongHui" name="HongHui">
+    <param name="address">114.80.154.34</param>
+    <param name="port">6231</param>
+    <param name="timeout">20</param>
+    <param name="isopentimeexecute">true</param>
+  </channel>
+  <channel id="KMDS" name="中信行情">
+    <param name="cfgfile">kmdsconfig.ini</param>
+    <param name="topic_SH">0.SBA2.1.1.*.*</param>
+    <param name="topic_SZ">0.SBA2.2.1.*.*</param>
+    <param name="topic_CFFEX">0.RBA1.*.1.*.*</param>
+    <param name="isopentimeexecute">true</param>
+    <param name="version">32</param>
+  </channel>
+  <channel id="WindTDF" name="万得API30">
+    <param name="address">114.80.154.34</param>
+    <param name="port">6220</param>
+    <param name="pushType">0</param>
+    <param name="typeFlags">14</param>
+    <param name="serverNum">1</param>
+    <param name="openTimeOut">30</param>
+    <param name="heartBeatGap">10</param>
+    <param name="missedHeartBeatCount">3</param>
+  </channel>
+  <channel id="WindTDF25" name="万得API25">
+    <param name="address">114.80.159.20</param>
+    <param name="port">10000</param>
+    <param name="pushType">0</param>
+    <param name="typeFlags">14</param>
+    <param name="serverNum">1</param>
+    <param name="openTimeOut">30</param>
+    <param name="heartBeatGap">10</param>
+    <param name="missedHeartBeatCount">3</param>
+  </channel>
+  <channel id="CITICsHsHlp" name="中信股票">
+    <param name="configfile">Hsconfig.ini</param>
+    <param name="op_entrust_way">3</param>
+    <param name="op_station">MagicQuant</param>
+  </channel>
+  <channel id="IB" name="盈透" />
+  <channel id="APex" name="顶点">
+    <param name="server_str">121.34.252.196@9061/tcp</param>
+    <param name="pszAppName">Quig</param>
+    <param name="pszVer">1.0</param>
+    <param name="pszUser">hj_test1</param>
+    <param name="pszPwd">111111</param>
+    <param name="orgID">9999</param>
+    <param name="op_station">111111</param>
+  </channel>
+  <channel id="CB" name="CB交易">
+    <param name="stockaddress">116.228.234.71</param>
+    <param name="stockport">7708</param>
+    <param name="stockversion">7.38</param>
+    <param name="stockyybID">1</param>
+    <param name="stockisquery">true</param>
+    <param name="optionaddress">211.144.195.168</param>
+    <param name="optionport">7706</param>
+    <param name="optionversion">6</param>
+    <param name="optionyybID">2</param>
+    <param name="optionisquery">true</param>
+    <param name="waittime">5000</param>
+  </channel>
+  <channel id="CBDF" name="CB行情">
+    <param name="address">61.152.107.173:7707;61.152.168.232:7715;61.152.168.227:7709;61.152.107.170:7707;119.147.86.172:443;113.105.73.81:7721;113.105.142.138:7709;113.105.142.139:7709;59.175.238.41:443;119.97.185.4:7709;59.175.238.38:7707;123.129.245.202:80;61.135.142.90:443;210.51.55.212:80;58.253.96.198:7709;58.253.96.200:7709</param>
+    <param name="version">7.38</param>
+    <param name="waittime">5000</param>
+    <param name="isquery">true</param>
+  </channel>
+  <channel id="Web" name="web">
+    <param name="scansecond">5</param>
+  </channel>
+  <channel id="GSFast" name="国信fast行情">
+    <param name="cfgfile">Engine.ini</param>
+  </channel>
+  <channel id="Paper" name="模拟撮合">
+    <param name="ischeckposition">True</param>
+  </channel>
+  <channel id="MQTrade" name="MQ资管平台">
+    <param name="logaccount">11</param>
+  </channel>
+  <channel id="NYL" name="NYL" />
+  <channel id="CTPStockOption" name="CTP股票期权">
+    <param name="optionaddressfile">config\ctpstockoption.xml</param>
+    <param name="stockaddressfile">config\ctpstock.xml</param>
+    <param name="isstockauthcode">false</param>
+    <param name="isoptionauthcode">true</param>
+  </channel>
+</channels>

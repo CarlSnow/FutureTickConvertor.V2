@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<parameter>
+  <T2SDK>
+	<license_no>HS-HUNDSUN001-FBASE2-0000-4ePWxzscBVtY9ZKdgDKhSyk2</license_no>
+	<servers>172.18.6.20:19007</servers>
+	<mac_addr>081196ADC9CC</mac_addr>
+	<init_recv_buf_size>102400</init_recv_buf_size>
+	<init_send_buf_size>1024000</init_send_buf_size>
+	<send_queue_size>100000</send_queue_size>
+	<timeout>5000</timeout>
+  </T2SDK>
+  
+  <HBChannel>
+	<servers>172.18.6.20:19009</servers>
+	<client_name>ufxtest</client_name>
+	<TopicName>ufx_topic</TopicName>
+	<SetFromNow>false</SetFromNow>
+	<SetReplace>false</SetReplace>
+	<SetSendInterval>0</SetSendInterv>
+	<FilterCount>1</FilterCount>
+	<FilterName1>operator_no</FilterName1>
+	<FilterValue1>1000</FilterValue1>al>
+  </HBChannel>  
+ </parameter>

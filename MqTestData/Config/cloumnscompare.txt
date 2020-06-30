@@ -1,0 +1,10 @@
+Time,2
+Close,3
+Open,4
+High,5
+Low,6
+Volumn,7
+Turnover,8
+PreClose,10
+OpenInterest,42
+

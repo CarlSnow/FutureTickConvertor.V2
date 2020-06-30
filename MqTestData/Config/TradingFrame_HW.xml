@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<template>
+	<Stock>
+		<Exchange id="SH" name="上海证券交易所"  TradingTime="9:30,11:30,13:00,15:00">
+			<TradingFrame BeginDay="19900101" TradingTime="9:30,11:30,13:00,15:00"   />
+		</Exchange>
+		<Exchange id="SZ" name="深圳证券交易所"  TradingTime="9:30,11:30,13:00,15:00">
+			<TradingFrame BeginDay="19900101" TradingTime="9:30,11:30,13:00,15:00"   />
+		</Exchange>
+	</Stock>
+	<StockOption>
+		<Exchange id="SH" name="上海证券交易所"  TradingTime="9:30,11:30,13:00,15:00">
+			<TradingFrame BeginDay="19900101" TradingTime="9:30,11:30,13:00,15:00"   />
+		</Exchange>
+		<Exchange id="SZ" name="深圳证券交易所"  TradingTime="9:30,11:30,13:00,15:00">
+			<TradingFrame BeginDay="19900101" TradingTime="9:30,11:30,13:00,15:00"   />
+		</Exchange>
+	</StockOption>
+	<Future>
+		<Exchange id="CFFEX" name="中国金融交易所"  TradingTime="9:30,11:30,13:00,15:00">
+			<Products>
+				<Product id="IF" name="沪深300指数" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:15,11:30,13:00,15:15"  /> 
+					<TradingFrame BeginDay="20160101" TradingTime="9:30,11:30,13:00,15:00"  /> 
+					<LimitValue UpLimit="0.1" LowLimit="0.1" />
+				</Product>  
+				<Product id="IC" name="中证500指数" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:15,11:30,13:00,15:15"  /> 
+					<TradingFrame BeginDay="20160101" TradingTime="9:30,11:30,13:00,15:00"  /> 
+					<LimitValue UpLimit="0.1" LowLimit="0.1" />
+				</Product>
+				<Product id="IH" name="上证50指数" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:15,11:30,13:00,15:15"  /> 
+					<TradingFrame BeginDay="20160101" TradingTime="9:30,11:30,13:00,15:00"  /> 
+					<LimitValue UpLimit="0.1" LowLimit="0.1" />
+				</Product>
+				<Product id="T" name="10年期国债" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:15,11:30,13:00,15:15"  />  
+					<LimitValue UpLimit="0.2" LowLimit="0.2" />
+				</Product>
+				<Product id="TF" name="5年期国债" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:15,11:30,13:00,15:15"  /> 
+					<LimitValue UpLimit="0.012" LowLimit="0.012" />				
+				</Product>
+			</Products>	 
+		</Exchange>
+		<Exchange id="SHFE" name="上海期货交易所" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00" >
+			<Products>
+				<Product id="ru" name="天然橡胶" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  /> 
+					<TradingFrame BeginDay="20141229" TradingTime="21:00,23:00,9:00,10:15,10:30,11:30,13:30,15:00"  /> 
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="cu" name="沪铜" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20131223" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="zn" name="沪锌" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20131223" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product>
+				<Product id="ni" name="沪镍" >
+					<TradingFrame BeginDay="19900101" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product>
+				<Product id="sn" name="沪锡" >
+					<TradingFrame BeginDay="19900101" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product>
+				<Product id="rb" name="螺纹钢" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20160504" TradingTime="21:00:00,23:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="hc" name="热轧卷" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20160504" TradingTime="21:00:00,23:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="bu" name="沥青" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20160504" TradingTime="21:00:00,23:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product>
+				<Product id="au" name="黄金" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20130708" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  /> 
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="ag" name="白银" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20130708" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.06" LowLimit="0.06" />
+				</Product> 
+				<Product id="al" name="沪铝" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20131223" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product> 
+				<Product id="pb" name="沪铅" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20131223" TradingTime="21:00:00,01:00:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product> 
+				<Product id="wr" name="线材" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product> 
+				<Product id="fu" name="燃料油" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product> 
+			</Products>	 
+		</Exchange> 
+		<Exchange id="DCE" name="大连商品交易所" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00" >
+			<Products>
+				<Product id="c" name="玉米" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="cs" name="玉米淀粉" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="a" name="豆一" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="b" name="豆二" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="m" name="豆粕" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="y" name="豆油" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="p" name="棕榈油" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="jd" name="鸡蛋" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product>
+				<Product id="bb" name="胶合板" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product>
+				<Product id="fb" name="纤维板" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.05" LowLimit="0.05" />
+				</Product>
+				<Product id="l" name="聚乙烯" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="v" name="聚氯乙烯" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="pp" name="聚丙烯" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="j" name="焦炭" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20140707" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="jm" name="焦煤" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="i" name="铁矿石" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141229" TradingTime="21:00:00,02:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20150511" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170331" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170401" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+			</Products>
+		</Exchange> 
+		<Exchange id="CZCE" name="郑州商品交易所" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00" >
+			<Products>	
+				<Product id="WH" name="强麦" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="PM" name="普麦" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="CF" name="棉花" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141215" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="SR" name="白糖" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141215" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="TA" name="PTA" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141215" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="OI" name="菜籽油" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20150612" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="FG" name="玻璃" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20150612" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="RI" name="早籼稻" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="MA" name="甲醇" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141215" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="RM" name="菜粕" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20141215" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="ZC" name="动力煤" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<TradingFrame BeginDay="20150612" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170419" TradingTime="09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<TradingFrame BeginDay="20170420" TradingTime="21:00:00,23:30:00,09:00:00,10:15:00,10:30:00,11:30:00,13:30:00,15:00:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="JR" name="粳稻" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="LR" name="晚籼稻" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="SF" name="硅铁" >
+					<TradingFrame BeginDay="19900101" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+				<Product id="CY" name="棉纱" >
+					<TradingFrame BeginDay="20170818" TradingTime="9:00,10:15,10:30,11:30,13:30,15:00"  />
+					<LimitValue UpLimit="0.04" LowLimit="0.04" />
+				</Product>
+			</Products>		 
+		</Exchange> 	 
+	</Future> 
+</template>
